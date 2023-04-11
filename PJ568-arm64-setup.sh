@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Download File
-wget http://pj568.eu.org/app/PJ568-linux-arm64.tar.gz -P ~/cache/
+wget http://pj568.eu.org/Blog-Store/PJ568-linux-arm64.tar.gz -P ~/cache/
 
 # Exc
 sudo tar -xvf ~/cache/PJ568-linux-arm64.tar.gz -C /
