@@ -8,18 +8,20 @@ sudo tar -xvf ~/cache/PJ568-linux-arm64.tar.gz -C /
 
 # Exp
 sudo echo "export PATH=$PATH:/usr/bin/PJ568的博客-linux-arm64/PJ568的博客 $PJ568_BLOG" >> /etc/profile
-source /etc/profile
+sudo source /etc/profile
 
 # .desktop
-touch /usr/share/applications/PJ568_BLOG.desktop
-echo "[Desktop Entry]" >> /usr/share/applications/PJ568_BLOG.desktop
-echo "Name=PJ568的博客" >> /usr/share/applications/PJ568_BLOG.desktop
-echo "Comment=PJ568的博客" >> /usr/share/applications/PJ568_BLOG.desktop
-echo "Exec=/usr/bin/PJ568的博客-linux-arm64/PJ568的博客" >> /usr/share/applications/PJ568_BLOG.desktop
-echo "Type=Application" >> /usr/share/applications/PJ568_BLOG.desktop
-echo "Terminal=false" >> /usr/share/applications/PJ568_BLOG.desktop
-echo "Icon=/usr/bin/PJ568的博客-linux-arm64/resources/app/icon.ico" >> /usr/share/applications/PJ568_BLOG.desktop
+sudo touch /usr/share/applications/PJ568_BLOG.desktop
+sudo echo "[Desktop Entry]" >> /usr/share/applications/PJ568_BLOG.desktop
+sudo echo "Name=PJ568的博客" >> /usr/share/applications/PJ568_BLOG.desktop
+sudo echo "Comment=PJ568的博客" >> /usr/share/applications/PJ568_BLOG.desktop
+sudo echo "Exec=/usr/bin/PJ568的博客-linux-arm64/PJ568的博客" >> /usr/share/applications/PJ568_BLOG.desktop
+sudo echo "Type=Application" >> /usr/share/applications/PJ568_BLOG.desktop
+sudo echo "Terminal=false" >> /usr/share/applications/PJ568_BLOG.desktop
+sudo echo "Icon=/usr/bin/PJ568的博客-linux-arm64/resources/app/icon.ico" >> /usr/share/applications/PJ568_BLOG.desktop
 sudo chmod +x /usr/share/applications/PJ568_BLOG.desktop
+sudo chmod 777 /usr/share/applications/PJ568_BLOG.desktop
 
 # Copy
-cp /usr/share/applications/PJ568_BLOG.desktop ~/Desktop/PJ568_BLOG.desktop
+sudo cp /usr/share/applications/PJ568_BLOG.desktop ~/Desktop/PJ568_BLOG.desktop
+sudo chmod 777 ~/Desktop/PJ568_BLOG.desktop
