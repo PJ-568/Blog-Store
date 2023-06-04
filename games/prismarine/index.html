@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prismarine Web Client</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="favicon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="description" content="Minecraft web client running in your browser">
+    <meta name="keywords" content="Minecraft, Web, Voxel, Javascript, PrismarineJS">
+    <meta name="author" content="PrismarineJS">
+    <meta name="theme-color" content="#349474">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0'>
+    <meta property="og:title" content="Prismarine Web Client" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prismarinejs.github.io/prismarine-web-client/" />
+    <meta property="og:image" content="https://prismarinejs.github.io/prismarine-web-client/favicon.png" />
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <style>
+      #background-video {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: 1;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ui-root">
+      <pmui-hud class="pmui" id="hud" style="display: none;"></pmui-hud>
+      <pmui-pausescreen class="pmui" id="pause-screen" style="display: none;"></pmui-pausescreen>
+      <pmui-loadingscreen class="pmui" id="loading-screen" style="display: none;"></pmui-loadingscreen>
+      <pmui-playscreen class="pmui" id="play-screen" style="display: none;"></pmui-playscreen>
+      <pmui-keybindsscreen class="pmui" id="keybinds-screen" style="display: none;"></pmui-keybindsscreen>
+      <pmui-optionsscreen class="pmui" id="options-screen" style="display: none;"></pmui-optionsscreen>
+      <pmui-titlescreen class="pmui" id="title-screen" style="display: none;"></pmui-titlescreen>
+    </div>
+  </body>
+</html>
