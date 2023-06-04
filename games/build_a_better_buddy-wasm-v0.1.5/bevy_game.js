@@ -328,7 +328,7 @@ async function load(module, imports) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('bevy_game_bg.wasm', import.meta.url);
+        input = new URL('https://repo.pj568.eu.org/games/build_a_better_buddy-wasm-v0.1.5/bevy_game_bg.wasm', import.meta.url);
     }
     const imports = {};
     imports.wbg = {};
